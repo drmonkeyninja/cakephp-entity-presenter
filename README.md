@@ -1,5 +1,7 @@
 # EntityPresenter plugin for CakePHP
 
+This is a work in progress and the implementation is likely to change before it is production ready.
+
 ## Installation
 
 You can install this plugin into your CakePHP application using [composer](https://getcomposer.org).
