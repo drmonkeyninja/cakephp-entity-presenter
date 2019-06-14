@@ -22,6 +22,8 @@ unset($findRoot);
 
 chdir($root);
 
+require_once 'vendor/autoload.php';
+
 if (file_exists($root . '/config/bootstrap.php')) {
     require $root . '/config/bootstrap.php';
 
