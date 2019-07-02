@@ -17,7 +17,8 @@
     "autoload-dev": {
         "psr-4": {
             "EntityPresenter\\Test\\": "tests/",
-            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/"
+            "Cake\\Test\\": "vendor/cakephp/cakephp/tests/",
+            "TestApp\\": "tests/TestApp"
         }
     }
 }
