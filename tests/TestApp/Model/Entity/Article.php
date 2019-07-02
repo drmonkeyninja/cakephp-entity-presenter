@@ -2,12 +2,12 @@
 namespace TestApp\Model\Entity;
 
 use Cake\ORM\Entity;
-use EntityPresenter\Presentable;
+use EntityPresenter\PresentableTrait;
 use TestApp\View\Presenter\ArticlePresenter;
 
 class Article extends Entity
 {
-    use Presentable;
+    use PresentableTrait;
 
     protected $presenter = ArticlePresenter::class;
 }
