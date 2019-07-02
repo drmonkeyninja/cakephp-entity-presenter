@@ -9,8 +9,6 @@ php:
   - 7.3
 
 env:
-  matrix:
-    - DB=mysql db_dsn='mysql://root@127.0.0.1/cakephp_test'
   global:
     - DEFAULT=1
 
@@ -28,8 +26,6 @@ before_script:
   - composer install --prefer-dist --no-interaction
 
   - if [[ $PHPCS = 1 ]]; then composer require --dev cakephp/cakephp-codesniffer=2.*; fi
-
-  - sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakephp_test;'; fi"
 
   - phpenv rehash
   - set +H
