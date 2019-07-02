@@ -12,7 +12,7 @@ class Presenter
     /**
      * Constructor
      *
-     * @param Entity $entity
+     * @param Entity $entity Entity
      */
     public function __construct($entity)
     {
@@ -22,7 +22,7 @@ class Presenter
     /**
      * Enables property-style retrieval
      *
-     * @param string $property
+     * @param string $property Property name
      * @return mixed
      */
     public function __get($property)
